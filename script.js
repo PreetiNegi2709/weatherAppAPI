@@ -9,11 +9,11 @@ btnC.addEventListener('click',async function(e){
     console.log(finalData)
     console.log(finalData.name)
 
-    let disWeather = document.getElementsByClassName("api")
-    disWeather.innerHTML= `<div class="apiCity"> ${finalData.name} </div>
-    <div class="apiCountry"> ${finalData.sys.country} </div>
-    <div class="apiTemp"> ${finalData.main.temp} </div>
-    <div class="apiHumidity"> ${finalData.main.humidity} </div>
-    <div class="apiWind"> ${finalData.wind.speed} </div>`
+    let disWeather = document.querySelector(".api")
+    disWeather.innerHTML= `<div class="apiCity"> <h2>${finalData.name} </h2></div>
+    <div class="apiCountry"> <p> Country : ${finalData.sys.country} </p> </div>
+    <div class="apiTemp"> <p>Temperature : <span class="numberFont">${finalData.main.temp}°C</span> </p> </div>
+    <div class="apiHumidity"> <p>Humidity : <span class="numberFont">${finalData.main.humidity}% </span></p> </div>
+    <div class="apiWind"> <p> Wind's Speed : <span class="numberFont">${finalData.wind.speed}m/hr</span> </p> </div>`
 
 })

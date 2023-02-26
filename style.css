@@ -1,19 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;700&display=swap%27');
 body{
     margin: 0; padding: 0;
     height: auto;
     /* min-height: 100vh; */
     /* width: 100%; */
-    background-color: bisque;
+    background-color: lightgray;
 
     display:flex;
      align-items: center;
     flex-direction: column;
+    font-family: 'Raleway', sans-serif;
 }
-
+.numberFont{
+    font-family: 'Roboto', sans-serif; 
+}
 .head{
     height: 20vh;
     width: 100%;
-    background-color: red;
+    /* background-color: red; */
     
     display: flex;
     justify-content: center; align-items: center;
@@ -21,14 +25,14 @@ body{
 .content{
     height: auto; 
     width: 100%;
-    background-color: yellow;
+    /* background-color: yellow; */
     
     display: flex;
     justify-content: center; align-items: center; flex-direction: column;
 }
 
 form{
-    background-color: aqua;
+    /* background-color: aqua; */
     /* height: 70vh;  */
     width: 100%;
 
@@ -41,22 +45,28 @@ form{
     border: 1px solid black;
 }
 .cityName:hover{
-    border:2.2px solid green;
+    border:1px solid green;
 }
+/* rehne du? */
+/* hnhn size chnge h thats why but meko jada hi rakhn to? */
+
 #btnC{
     padding: 0.5rem 1.4rem; 
     border-radius: 0.4rem; 
     border: none; 
-    background-color: rgb(111, 222, 111);
+    background-color: #6d7174; color: white;
     margin-left: 1rem;
 }
 .api{
     width: 30%;
-    background-color: lightblue;
+    background-color: white;
+    height: auto;
 
     display: flex;
     justify-content: center;
     align-items: center; flex-direction: column;
-    margin: 2rem;
-    padding: 3rem;
+
+    margin: 4rem;
+    border-radius: 1rem;
+    box-shadow: 5px 10px #bbbbbb8a;
 }
