@@ -7,7 +7,7 @@ btnC.addEventListener('click',async function(e){
     let data = await fetch("https://api.openweathermap.org/data/2.5/weather?q="+ city +"+&appid=cbe3dd267a18f6c89943b3eff94f1ed7&units=metric")
     let finalData = await data.json()
     console.log(finalData)
-    console.log(finalData.name)
+    // console.log(finalData.name)
 
     let disWeather = document.querySelector(".api")
     disWeather.innerHTML= `<div class="apiCity"> <h2>${finalData.name} </h2></div>
